@@ -18,12 +18,12 @@ const args = cli.parse({
 	device: [ 'd', 'Device number ', 'int', 0 ],
 	keyIds: [ 'k', 'Key id\'s EX: -k "27 38 39 40" ', 'string', "" ],
 	keys: [ 'e', 'Easy keys', 'string', false ],
-	color: [ 'c', 'hex color', 'string', "f00" ],
-	color2: [ 'c2', 'hex color', 'string', "000" ],
+	color: [ 'c', 'Hex color', 'string', "f00" ],
+	color2: [ 'c2', 'Hex color', 'string', "000" ],
 	blink: [ 'b', 'Number of times to flash keys', 'int', 1 ],
 	delay: [ 'd', 'Delay between flashes in milliseconds', 'int', 1000 ],
 	delay2: [ 'd2', 'Delay between flashes in milliseconds', 'int', false ],
-	autoExit: [ 't', 'Time the key should stay changed before reverting in milliseconds', 'int', 500],
+	//autoExit: [ 't', 'Time the key should stay changed before reverting in milliseconds', 'int', 500],
 })
 
 const di = args.device;
@@ -474,9 +474,11 @@ async function main() {
 		process.exit(0)
 		
 		
+		/*
 		setTimeout(function () {
 			process.exit(0)
 		}, args.autoExit);
+		*/
 		
 		
 
