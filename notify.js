@@ -15,7 +15,7 @@ cli.enable("catchall");
 
 const args = cli.parse({
 	interactive: [ 'i', 'Interactive mode', 'boolean', false ],
-	device: [ 'd', 'Device number ', 'int', 0 ],
+	device: [ 'n', 'Device number ', 'int', 0 ],
 	keyIds: [ 'k', 'Key id\'s EX: -k "27 38 39 40" ', 'string', "" ],
 	keys: [ 'e', 'Easy keys', 'string', false ],
 	color: [ 'c', 'Hex color', 'string', "f00" ],
@@ -437,7 +437,8 @@ async function main() {
 		
 		sdk.CorsairSetLedsColorsBufferByDeviceIndex(di, device_leds)
 		sdk.CorsairSetLedsColorsFlushBuffer();
-		await sleep(args.delay);
+		console.log(args.delay);
+		await sleep(parseInt(args.delay));
 		
 		for (var b = 0; b < args.blink; b++) {
 			//console.log(b);

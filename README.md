@@ -20,7 +20,7 @@ Usage:
 
 Options:
   -i, --interactive [BOOLEAN] Interactive mode
-  -d, --device [NUMBER]       Device number
+  -n, --device [NUMBER]       Device number
   -k, --keyIds [STRING]       Key id's EX: -k "27 38 39 40"
   -e, --keys [STRING]         Easy keys
   -c, --color [STRING]        Hex color (Default is f00)
