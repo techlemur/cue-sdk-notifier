@@ -1,0 +1,31 @@
+{
+	"name": "cue-sdk-notifier",
+	"version": "1.0.0",
+	"description": "Simple cli script for changing corsair keyboard key colors temporarily",
+	"main": "notify.js",
+	"scripts": {
+		"test": "node notify.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/techlemur/cue-sdk-notifier.git"
+	},
+	"keywords": [
+		"cue",
+		"sdk"
+	],
+	"author": "techlemur",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/techlemur/cue-sdk-notifier/issues"
+	},
+	"homepage": "https://github.com/techlemur/cue-sdk-notifier#readme",
+	"devDependencies": {
+		"cli": "^1.0.1",
+		"cue-sdk": "^1.4.1"
+	},
+	"dependencies": {
+		"hex2rgb": "^2.2.0",
+		"inquirer": "^7.3.3"
+	}
+}
